@@ -78,17 +78,17 @@ output "kms_policy_arn" {
   value       = module.eks.kms_policy_arn
 }
 
-output "nginx_ingress_controller_dns_hostname" {
-  description = "NGINX Ingress Controller DNS Hostname"
-  value       = module.eks_bootstrap.nginx_ingress_controller_dns_hostname
-}
+# output "nginx_ingress_controller_dns_hostname" {
+#   description = "NGINX Ingress Controller DNS Hostname"
+#   value       = module.eks_bootstrap.nginx_ingress_controller_dns_hostname
+# }
 
-output "ebs_encryption" {
-  description = "Is AWS EBS encryption is enabled or not?"
-  value       = "Encrypted by default"
-}
+# output "ebs_encryption" {
+#   description = "Is AWS EBS encryption is enabled or not?"
+#   value       = "Encrypted by default"
+# }
 
-output "efs_id" {
-  value       = module.eks_bootstrap.efs_id
-  description = "EFS ID"
-}
+# output "efs_id" {
+#   value       = module.eks_bootstrap.efs_id
+#   description = "EFS ID"
+# }
