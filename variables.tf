@@ -4,6 +4,12 @@ variable "environment" {
   type        = string
 }
 
+variable "region" {
+  description = "Region"
+  default     = ""
+  type        = string
+}
+
 variable "name" {
   description = "Specify the name of the EKS cluster"
   default     = ""

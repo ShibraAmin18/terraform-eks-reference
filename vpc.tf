@@ -1,5 +1,5 @@
 locals {
-  region      = "us-east-2"
+  region      = var.region
   environment = var.environment
   name        = var.name
   additional_aws_tags = {
