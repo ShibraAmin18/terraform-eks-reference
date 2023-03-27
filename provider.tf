@@ -3,6 +3,11 @@ provider "aws" {
   default_tags {
     tags = local.additional_aws_tags
   }
+  assume_role {
+    role_arn = local.role_arn
+    session_name = "terraform"
+    external_id  = "some-external-id"
+  }
 }
 
 provider "kubernetes" {
