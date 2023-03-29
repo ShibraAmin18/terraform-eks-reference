@@ -40,3 +40,20 @@ variable "kms_key_arn" {
   type        = string
 }
 
+variable "external_id" {
+  description = "KMS key to Encrypt EKS resources."
+  default     = "cross-acc"
+  type        = string
+}
+
+variable "role_arn" {
+  description = "KMS key to Encrypt EKS resources."
+  default     = "arn:aws:iam::243620629044:role/SKAFCAA-SKAFCAA"
+  type        = string
+}
+
+variable "session_name" {
+  description = "KMS key to Encrypt EKS resources."
+  default     = "test"
+  type        = string
+}

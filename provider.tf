@@ -4,9 +4,9 @@ provider "aws" {
     tags = local.additional_aws_tags
   }
   assume_role {
-    role_arn = local.role_arn
-    session_name = "terraform"
-    external_id  = "some-external-id"
+    role_arn = var.role_arn
+    session_name = var.session_name
+    external_id  = var.external_id
   }
 }
 
